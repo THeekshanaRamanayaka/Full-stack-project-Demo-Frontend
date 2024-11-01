@@ -1,0 +1,51 @@
+<form action="">
+  <div class="snap-y-12 mx-16 mt-8">
+    <div class="border-b border-gray-900/10 pb-12">
+      <p class="text-center text-4xl bg-gray-600 p-4 text-white">Add Customer</p>
+      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-6">
+        <div class="sm:col-span-4">
+          <label for="username" class="block text-sm/6 font-medium text-gray-900">Name</label>
+          <div class="mt-2">
+            <div
+              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+              <input type="text" name="username" id="username" autocomplete="username"
+                class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                placeholder="  jane Smith" [(ngModel)]="customer.name">
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="username" class="block text-sm/6 font-medium text-gray-900">Address</label>
+          <div class="mt-2">
+            <div
+              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+              <input type="text" name="username" id="username" autocomplete="username"
+                class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                placeholder="  Colombo" [(ngModel)]="customer.address">
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="username" class="block text-sm/6 font-medium text-gray-900">E-Mail</label>
+          <div class="mt-2">
+            <div
+              class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+              <input type="text" name="username" id="username" autocomplete="username"
+                class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
+                placeholder="  janesmith@gmail.com" [(ngModel)]="customer.email">
+            </div>
+          </div>
+        </div>
+        <div class="sm:col-span-4 mt-4">
+          <button type="submit"
+            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            (click)="addCustomer()">
+            Add Customer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
